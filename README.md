@@ -20,9 +20,7 @@ want work that ships, not just demos.
 
 <img src="assets/label-stats.svg" alt="(Stats)">
 
-<img src="assets/github.svg" alt="153 stars earned, 16 public repos, 20 forks, 24 followers, most used language Python" width="100%">
-
-Beyond GitHub — the models are on Civitai:
+The models are on Civitai:
 
 <a href="https://civitai.com/user/denrakeiw">
   <img src="assets/civitai.svg" alt="Civitai: 3.9k followers, 324.3k model downloads, 746.2k image generations, #1 Vehicle Creators, #3 Tool Creators" width="100%">
