@@ -25,7 +25,7 @@ want work that ships, not just demos.
 
 <img src="assets/label-work.svg" alt="(Selected Work)">
 
-| | |
+| Project | Context |
 |---|---|
 | **Artificial Emotions** | Stiftung Deutsche Depressionshilfe · Gold Tower, NYF LTX 2026 |
 | **Porsche** | AI/CGI hybrid R&D and configurator work |
@@ -42,27 +42,23 @@ want work that ships, not just demos.
 
 ComfyUI tooling people actually install.
 
-<p>
-  <a href="https://github.com/DenRakEiw/Latent_Nodes"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=DenRakEiw&repo=Latent_Nodes&bg_color=0c0c0f&title_color=c8ff3d&text_color=c9c6b6&icon_color=c8ff3d&border_color=1d1d22&border_radius=14"></a>
-  <a href="https://github.com/DenRakEiw/DenRakEiw_Nodes"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=DenRakEiw&repo=DenRakEiw_Nodes&bg_color=0c0c0f&title_color=c8ff3d&text_color=c9c6b6&icon_color=c8ff3d&border_color=1d1d22&border_radius=14"></a>
-</p>
-<p>
-  <a href="https://github.com/DenRakEiw/WAN_NN_Latent_Upscale"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=DenRakEiw&repo=WAN_NN_Latent_Upscale&bg_color=0c0c0f&title_color=c8ff3d&text_color=c9c6b6&icon_color=c8ff3d&border_color=1d1d22&border_radius=14"></a>
-  <a href="https://github.com/DenRakEiw/ComfyUI-InpaintCanvas"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=DenRakEiw&repo=ComfyUI-InpaintCanvas&bg_color=0c0c0f&title_color=c8ff3d&text_color=c9c6b6&icon_color=c8ff3d&border_color=1d1d22&border_radius=14"></a>
-</p>
+<a href="https://github.com/DenRakEiw?tab=repositories&sort=stargazers">
+  <img src="assets/repos.svg" alt="Latent_Nodes 45★ · DenRakEiw_Nodes 35★ · WAN_NN_Latent_Upscale 28★ · ComfyUI-InpaintCanvas 21★ · flux_3_api 7★" width="100%">
+</a>
 
-Also: [**flux_3_api**](https://github.com/DenRakEiw/flux_3_api) — BFL Flux 3 video API nodes with an LLM prompt generator ·
-[**Skills**](https://github.com/DenRakEiw/Skills) — agent skills for AI video direction ·
-[**scumble**](https://github.com/DenRakEiw/scumble) — desktop inpainting editor driven by your own ComfyUI
+[Latent_Nodes](https://github.com/DenRakEiw/Latent_Nodes) ·
+[DenRakEiw_Nodes](https://github.com/DenRakEiw/DenRakEiw_Nodes) ·
+[WAN_NN_Latent_Upscale](https://github.com/DenRakEiw/WAN_NN_Latent_Upscale) ·
+[ComfyUI-InpaintCanvas](https://github.com/DenRakEiw/ComfyUI-InpaintCanvas) ·
+[flux_3_api](https://github.com/DenRakEiw/flux_3_api) ·
+[Skills](https://github.com/DenRakEiw/Skills) ·
+[scumble](https://github.com/DenRakEiw/scumble)
 
 <br>
 
 <img src="assets/label-stats.svg" alt="(Stats)">
 
-<p>
-  <img width="58%" src="https://github-readme-stats.vercel.app/api?username=DenRakEiw&show_icons=true&hide_title=true&count_private=true&include_all_commits=true&bg_color=0c0c0f&text_color=c9c6b6&icon_color=c8ff3d&title_color=c8ff3d&border_color=1d1d22&border_radius=14">
-  <img width="40%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=DenRakEiw&layout=compact&langs_count=6&bg_color=0c0c0f&text_color=c9c6b6&title_color=c8ff3d&border_color=1d1d22&border_radius=14">
-</p>
+<img src="assets/github.svg" alt="153 stars earned, 16 public repos, 20 forks, 24 followers, most used language Python" width="100%">
 
 Beyond GitHub — the models are on Civitai:
 

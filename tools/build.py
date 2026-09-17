@@ -140,8 +140,10 @@ def header():
     p.append('<g clip-path="url(#roleMask)">')
     for i, role in enumerate(roles):
         u = i * 2.6
+        # The site uses AnimatePresence mode="wait": one role is fully gone
+        # before the next arrives. Leaving at +2.1 keeps that, with no overlap.
         stops = [(0.0, 0, 44), (u, 0, 44), (u + 0.5, 1, 0),
-                 (u + 2.6, 1, 0), (u + 3.1, 0, -44), (cycle, 0, -44)]
+                 (u + 2.1, 1, 0), (u + 2.6, 0, -44), (cycle, 0, -44)]
         clean, seen = [], set()
         for t, o, dy in stops:
             k = round(min(t, cycle) / cycle, 5)
@@ -218,6 +220,31 @@ def pills(rows):
     return svg_open(int(widest) + 2, y - lead, "Tech stack") + "".join(p) + "</svg>"
 
 
+# --------------------------------------------------------------------------
+# Repo list — the site's open-source block, row for row
+# --------------------------------------------------------------------------
+
+def repo_list(repos):
+    PAD, ROW, star_col = 28, 52, 84
+    H = PAD * 2 + ROW * len(repos)
+    p = [svg_open(W, H, "Open-source repositories"), ambient_defs(W, H, orbs=False),
+         card_bg(W, H, INK_900)]
+    for i, (stars, name, desc, lang) in enumerate(repos):
+        y = PAD + i * ROW
+        if i:
+            p.append(f'<rect x="{PAD}" y="{y}" width="{W - PAD * 2}" height="1" fill="#ffffff" opacity="0.05"/>')
+        n = str(stars)
+        nw = width(MONO, n, 13, 0)
+        p.append(mono(n, 13, star_col - nw - 12, y + 26, ACCENT, 0))
+        p.append(mono("★", 11, star_col - 8, y + 26, BONE_400, 0))
+        p.append(mono(name, 13, star_col + 24, y + 22, BONE_100, 0))
+        p.append(mono(desc, 11, star_col + 24, y + 40, BONE_400, 0))
+        lw = width(MONO, lang.upper(), 9, WIDE2)
+        p.append(mono(lang.upper(), 9, W - PAD - lw, y + 26, BONE_400, WIDE2))
+    p.append("</svg>")
+    return "\n".join(p)
+
+
 def write(name, content):
     with open(os.path.join(OUT, name), "w", encoding="utf-8") as fh:
         fh.write(content)
@@ -245,6 +272,25 @@ if __name__ == "__main__":
         ("746.2k", "Image generations", False),
         ("#1", "Vehicle Creators", True),
         ("#3", "Tool Creators", True),
+    ]))
+
+    # Generated here rather than pulled from github-readme-stats: that service
+    # is rate-limited to the point of serving broken images, and these numbers
+    # come straight from the GitHub API anyway.
+    write("github.svg", stats_strip([
+        ("153", "Stars earned", True),
+        ("16", "Public repos", False),
+        ("20", "Forks", False),
+        ("24", "Followers", False),
+        ("Python", "Most used", False),
+    ]))
+
+    write("repos.svg", repo_list([
+        (45, "Latent_Nodes", "Latent editing nodes for ComfyUI", "Python"),
+        (35, "DenRakEiw_Nodes", "ComfyUI node pack", "Python"),
+        (28, "WAN_NN_Latent_Upscale", "Neural network upscaler for Wan", "Python"),
+        (21, "ComfyUI-InpaintCanvas", "Krita-style inpainting editor inside a ComfyUI node", "JavaScript"),
+        (7, "flux_3_api", "BFL Flux 3 video API nodes, with an LLM prompt generator", "Python"),
     ]))
 
     write("stack.svg", pills([
