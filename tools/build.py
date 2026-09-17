@@ -7,6 +7,19 @@ pulsing eyebrow dot, the rotating role) and the `(Section Label)` convention.
 Type ships as outlines because GitHub proxies README images through camo, which
 strips webfonts. Sizes are chosen for GitHub's ~860px content column, so the
 artwork renders close to 1:1 rather than being scaled down into illegibility.
+
+To run it, fetch the two typefaces first (they are OFL-licensed and belong to
+their foundries, so they are gitignored rather than vendored here):
+
+    pip install fonttools uharfbuzz
+    mkdir fonts && cd fonts
+    curl -LO https://github.com/google/fonts/raw/main/ofl/instrumentserif/InstrumentSerif-Regular.ttf
+    curl -L -o "JetBrainsMono[wght].ttf" https://github.com/google/fonts/raw/main/ofl/jetbrainsmono/JetBrainsMono%5Bwght%5D.ttf
+
+Then instance the variable mono at 400 and 500 into JetBrainsMono-Regular.ttf
+and JetBrainsMono-Medium.ttf with fontTools.varLib.instancer, and run:
+
+    python build.py
 """
 
 import os
