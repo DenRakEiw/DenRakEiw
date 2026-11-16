@@ -5,7 +5,7 @@
 ### `> now shipping: scumble`
 
 <a href="https://github.com/DenRakEiw/scumble">
-  <img src="https://raw.githubusercontent.com/DenRakEiw/scumble/main/docs/images/readme/hero.gif" width="100%" alt="Scumble: three boxes drawn and described on an empty canvas, then FLUX 3 Image makes the café picture with each thing in its box">
+  <img src="https://raw.githubusercontent.com/DenRakEiw/scumble/main/docs/images/readme/workflow.gif" width="100%" alt="Scumble: one key visual built in the editor, its layers landing one by one: the generated and upscaled base, the wheels inpainted from a reference photo, a detail pass tile by tile, the face and the shoes swapped from references, the Realism Pass">
 </a>
 
 <p>
@@ -13,7 +13,7 @@
   <a href="https://github.com/DenRakEiw/scumble/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/DenRakEiw/scumble?style=for-the-badge&labelColor=1B1714&color=C4643A&label=release"></a>
   <a href="https://github.com/DenRakEiw/scumble/releases"><img alt="Downloads" src="https://img.shields.io/github/downloads/DenRakEiw/scumble/total?style=for-the-badge&labelColor=1B1714&color=C4643A"></a>
   <a href="https://github.com/DenRakEiw/scumble/blob/main/LICENSE"><img alt="Licence: GPL-3.0" src="https://img.shields.io/badge/licence-GPL--3.0-C4643A?style=for-the-badge&labelColor=1B1714"></a>
-  <a href="https://github.com/DenRakEiw/scumble#agents-can-drive-it"><img alt="MCP: 105 tools" src="https://img.shields.io/badge/MCP-105%20tools-C4643A?style=for-the-badge&labelColor=1B1714"></a>
+  <a href="https://github.com/DenRakEiw/scumble#agents-can-drive-it"><img alt="MCP: 124 tools" src="https://img.shields.io/badge/MCP-124%20tools-C4643A?style=for-the-badge&labelColor=1B1714"></a>
 </p>
 
 ```diff
